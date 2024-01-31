@@ -12,7 +12,7 @@ export default function HeroSection () {
                     </p>
                 </section>
                 <button id="reserve_button">Reserve a table</button>
-                <button id="order_button">Order Online</button>
+                <button id="order_button">Order online</button>
             </div>
             <img src="Wireframe_foodImages/images/food_dish" alt="A tasty dish" width={"900px"} height={"600px"}/>
         </div>

@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 export default function FooterNav() {
 
@@ -6,17 +6,17 @@ export default function FooterNav() {
         <footer>
             <div className="footerNavTable">
             <ul className="Doormat-Navigation">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Reservations</a></li>
-                <li><a href="">Order Online</a></li>
-                <li><a href="">Login</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/menu">Menu</Link></li>
+                <li><Link to="/reservation">Reservations</Link></li>
+                <li><Link to="/orderonline">Order Online</Link></li>
+                <li><Link to="/login">Login</Link></li>
             </ul>
             <ul className="Doormat-Navigation">
-                <li><a href="">Contact</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Social Medial Links</a></li>
+                <li><Link to="/contactus">Contact</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/">Social Medial Links</Link></li>
             </ul>
             </div>
         </footer>

@@ -106,6 +106,9 @@
   font-size: large;
   font-weight: bold;
   color: rgb(0, 107, 0);
+  border-style: none;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .SpecialsSectionDiv {
@@ -137,6 +140,9 @@
   font-size: large;
   font-weight: bold;
   color: rgb(0, 107, 0);
+  border-style: none;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .TestimonialsSectionDiv {
@@ -165,7 +171,10 @@
   background-color: rgb(245, 223, 26);
   font-size: large;
   font-weight: bold;
+  border-style: none;
   color: rgb(0, 107, 0);
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /* ------------FOOTER STYLING-------------- */
@@ -194,6 +203,6 @@
 }
 
 .Doormat-Navigation a{
-  color: whitesmoke;
+  color: rgb(245, 223, 26);
   text-decoration: none;
 }
