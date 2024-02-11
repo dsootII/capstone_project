@@ -1,8 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import ReservationForm from './components/ReservationPage_Components/ReservationForm';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+
+test('Booking form button text displays', () => {
+  render(<ReservationForm/>);
+  const buttonText = screen.getByText("Make your reservation");
+  expect(buttonText).toBeInTheDocument();
 });

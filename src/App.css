@@ -12,6 +12,13 @@
   background-blend-mode: color;
 }
 
+h1 {
+  font-size:x-large;
+  font-weight: 700;
+  font-family:Arial, Helvetica, sans-serif;
+  padding-bottom: 10px;
+}
+
 
 /* ------------HEADER STYLING-------------- */
 
@@ -66,7 +73,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px;
+  
 }
 
 .HeroSectionDiv {
@@ -75,6 +82,7 @@
   align-items: flex-start;
   background-color: transparent;
   font-family: Helvetica, sans-serif;
+  padding-bottom: 30px;
 }
 
 .HeroSectionTextPartDiv {
@@ -112,7 +120,7 @@
 }
 
 .SpecialsSectionDiv {
-  width: 100vw;
+  padding-bottom: 30px;
 }
 
 .SpecialsSectionDiv > h1 {
@@ -126,7 +134,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+
 
 }
 
@@ -146,8 +154,9 @@
 }
 
 .TestimonialsSectionDiv {
-  width: 100vw;
+  padding-bottom: 30px;
 }
+
 
 .TestimonialsSectionDiv > h1 {
   display: flex;
@@ -158,7 +167,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
 
 }
 
@@ -195,6 +203,7 @@
   border-left: 10px;
   padding-right: 0;
   border-right: 0;
+  padding-bottom: 40px;
 }
 
 .Doormat-Navigation {
@@ -205,4 +214,17 @@
 .Doormat-Navigation a{
   color: rgb(245, 223, 26);
   text-decoration: none;
+}
+
+
+/* ------------SPECIFIC STYLING-------------- */
+
+.reservationFormContainer {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-image: url("C:\Users\Kunal\Documents\React Work\capstone_project\public\Wireframe_foodImages\images\pexels-kelly-2583373.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }

@@ -18,6 +18,8 @@ import ReservationPageMain from "./components/ReservationPage_Components/Reserva
 import MenuPageMain from "./components/MenuPage_Components/MenuPageMain";
 import OrderOnlinePageMain from "./components/OnlineOrderPage_Components/OrderOnlinePageMain";
 import LoginPageMain from "./components/LoginPage_Components/LoginPageMain";
+import Alert from "./components/Alert";
+
  
 function App() {
     return (
@@ -26,8 +28,8 @@ function App() {
             <Router>
                 <Routes>
                     {/* This route is for home component 
-          with exact path "/", in component props 
-          we passes the imported component*/}
+                    with exact path "/", in component props 
+                    we passes the imported component*/}
                     <Route
                         exact
                         path="/"
@@ -35,16 +37,16 @@ function App() {
                     />
  
                     {/* This route is for about component 
-          with exact path "/about", in component 
-          props we passes the imported component*/}
+                    with exact path "/about", in component 
+                    props we passes the imported component*/}
                     <Route
                         path="/about"
                         element={<AboutUsMain />}
                     />
  
                     {/* This route is for contactus component
-          with exact path "/contactus", in 
-          component props we passes the imported component*/}
+                    with exact path "/contactus", in 
+                    component props we passes the imported component*/}
                     <Route
                         path="/contactus"
                         element={<ContactUsMain />}
@@ -55,24 +57,24 @@ function App() {
                         element={<ReservationPageMain />}
                     />
 
-<Route
+                    <Route
                         path="/menu"
                         element={<MenuPageMain />}
                     />
 
-<Route
+                    <Route
                         path="/orderonline"
                         element={<OrderOnlinePageMain />}
                     />
 
-<Route
+                    <Route
                         path="/login"
                         element={<LoginPageMain />}
                     />
  
                     {/* If any route mismatches the upper 
-          route endpoints then, redirect triggers 
-          and redirects app to home component with to="/" */}
+                    route endpoints then, redirect triggers 
+                    and redirects app to home component with to="/" */}
                     {/* <Redirect to="/" /> */}
                     <Route
                         path="*"
@@ -80,6 +82,7 @@ function App() {
                     />
                 </Routes>
             </Router>
+            <Alert />
         </>
     );
 }

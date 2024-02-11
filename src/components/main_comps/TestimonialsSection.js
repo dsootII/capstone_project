@@ -2,6 +2,13 @@ import Testimonial from "./Testimonial"
 
 export default function TestimonialsSection () {
 
+    const handleBackToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
+
     return (
         <div className="TestimonialsSectionDiv">
             <h1>Our customers after a meal</h1>
@@ -22,7 +29,7 @@ export default function TestimonialsSection () {
                 imageSrc="Wireframe_foodImages/images/Sachin-Tendulkar.jpg"
             />
             </div>
-            <button id="top_button_special">Back to Top</button>
+            <button id="top_button_special" onClick={handleBackToTop}>Back to Top</button>
         </div>
     )
 }

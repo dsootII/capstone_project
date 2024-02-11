@@ -1,5 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 
 export default function HeroSection () {
+
+    const navigate = useNavigate();
 
     return (
         <div className="HeroSectionDiv">
@@ -11,8 +15,8 @@ export default function HeroSection () {
                         Nestled in the heart of Mumbai, our imaginary restaurant is a celebration of the city's rich culinary heritage fused with the invigorating essence of lemon.
                     </p>
                 </section>
-                <button id="reserve_button">Reserve a table</button>
-                <button id="order_button">Order online</button>
+                <button id="reserve_button" onClick={() => navigate('/reservation')}>Reserve a table</button>
+                <button id="order_button" onClick={() => navigate('/orderonline')}>Order online</button>
             </div>
             <img src="Wireframe_foodImages/images/food_dish" alt="A tasty dish" width={"900px"} height={"600px"}/>
         </div>
