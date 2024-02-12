@@ -1,4 +1,7 @@
 import Testimonial from "./Testimonial"
+import kejriwal from "../component_assets/kejriwal-4.webp";
+import lata from "../component_assets/lata8_0.webp";
+import sachin from "../component_assets/Sachin-Tendulkar.jpg";
 
 export default function TestimonialsSection () {
 
@@ -16,17 +19,17 @@ export default function TestimonialsSection () {
             <Testimonial 
                 title="Arvind Kejriwal"
                 description="Great food for the common man!"
-                imageSrc="Wireframe_foodImages/images/kejriwal-4.webp"
+                imageSrc={kejriwal}
             />
             <Testimonial 
                 title="Lata Mangeshkar"
                 description="AAAAaaaa! OUuuuuu! ummm hmmmmmmm"
-                imageSrc="Wireframe_foodImages/images/lata8_0.webp"
+                imageSrc={lata}
             />
             <Testimonial 
                 title="Sachin Tendulkar"
                 description="Ay vedyaaa, little lemon me nahi khaya toh bat ka grip nikaalke..."
-                imageSrc="Wireframe_foodImages/images/Sachin-Tendulkar.jpg"
+                imageSrc={sachin}
             />
             </div>
             <button id="top_button_special" onClick={handleBackToTop}>Back to Top</button>

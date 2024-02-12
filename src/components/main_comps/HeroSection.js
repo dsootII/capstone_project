@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import foodDish from "../component_assets/food_dish";
 
 
 export default function HeroSection () {
@@ -18,7 +19,7 @@ export default function HeroSection () {
                 <button id="reserve_button" onClick={() => navigate('/reservation')}>Reserve a table</button>
                 <button id="order_button" onClick={() => navigate('/orderonline')}>Order online</button>
             </div>
-            <img src="Wireframe_foodImages/images/food_dish" alt="A tasty dish" width={"900px"} height={"600px"}/>
+            <img src={foodDish} alt="A tasty dish" width={"900px"} height={"600px"}/>
         </div>
     )
 }
